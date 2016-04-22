@@ -24,3 +24,5 @@
 
   Bootstrap Sass:
 		Merupakan Framework CSS yang digunakan dalam melakukan tugas styling untuk mempercantik halaman web application kita.
+
+> Adham Kurniawan
