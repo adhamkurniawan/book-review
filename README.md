@@ -19,7 +19,6 @@
 
 #### Penjelasan fitur (gem) yang digunakan:
 
-> Simple Form: Merupakan syntax highlightning yang digunakan dalam mengerate sebuah form. Pada umumnya di rails syntax yang digunakan agak panjang dalam membuat form, maka dari itu di sini menggunakan simple form agar lebih mudah dan cepat.
+> 1. Simple Form: Merupakan syntax highlightning yang digunakan dalam mengerate sebuah form. Pada umumnya di rails syntax yang digunakan agak panjang dalam membuat form, maka dari itu di sini menggunakan simple form agar lebih mudah dan cepat.
 
-
-> Bootstrap Sass: Merupakan Framework CSS yang digunakan dalam melakukan tugas styling untuk mempercantik halaman web application kita.
+> 2. Bootstrap Sass: Merupakan Framework CSS yang digunakan dalam melakukan tugas styling untuk mempercantik halaman web application kita.
