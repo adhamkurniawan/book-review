@@ -1,4 +1,4 @@
-# Applikasi ini berjalan dengan framework Ruby on Rails dan menggunakan bahasa pemrogramman Ruby.
+# Book Review Apps
 
 ### Pastikan anda telah menginstall Ruby on Rails dengan version yang sama seperti di bawah:
 
