@@ -1,3 +1,4 @@
+<%= image_tag @book.image %>
 <h2><%= @book.title %></h2> <br>
 <p><%= @book.description %></p>
 <p>
@@ -5,7 +6,11 @@
 </p>
 
 <div class="btn-group">
-  <%= link_to "Back", root_path, class: "btn btn-default" %>
-  <%= link_to "Edit", edit_book_path(@book), class: "btn btn-default" %>
-  <%= link_to "Delete", book_path(@book), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default" %>
+    <%= link_to "Back", root_path, class: "btn btn-default" %>
+  <% if user_signed_in? %>
+    <% if @book.user_id == current_user.id %>
+      <%= link_to "Edit", edit_book_path(@book), class: "btn btn-default" %>
+      <%= link_to "Delete", book_path(@book), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default" %>
+    <% end %>
+  <% end %>
 </div>
