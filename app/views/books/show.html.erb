@@ -1,9 +1,18 @@
-<%= image_tag @book.image %>
-<h2><%= @book.title %></h2> <br>
-<p><%= @book.description %></p>
-<p>
-  <small><%= @book.author %></small>
-</p>
+<div class="row">
+  <div class="col-md-4">
+    <%= image_tag @book.image, class: "book-show" %>
+  </div>
+  <div class="col-md-8">
+    <div class="book-info">
+      <h2 class="book-title"><%= @book.title %></h2>
+      <h3 class="book-author"><span>From</span> <%= @book.author %></h3>
+      <h2 class="avg-rating">Average Rating</h2>
+      <p class="book-desc"><%= @book.description %></p>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
 
 <div class="btn-group">
     <%= link_to "Back", root_path, class: "btn btn-default" %>
