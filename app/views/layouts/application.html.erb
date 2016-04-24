@@ -36,16 +36,20 @@
           </ul>
         <% if user_signed_in? %>
           <ul class="nav navbar-nav">
-            <li><%= link_to "Add Book", new_book_path %></li>
+            <li><a href="<%= new_book_path %>"><span class="glyphicon glyphicon-pencil">&nbsp;</span>Add Book</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Settings", edit_user_registration_path %></li>
-            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+            <li><a href="<%= edit_user_registration_path %>"><span class="glyphicon glyphicon-user">&nbsp;</span>Settings</a></li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <span class="glyphicon glyphicon-log-out">&nbsp;</span>Log Out
+              <% end %>
+            </li>
           </ul>
         <% else %>
           <ul class="nav navbar-nav">
-            <li><%= link_to "Sign Up", new_user_registration_path %></li>
-            <li><%= link_to "Sign In", new_user_session_path %></li>
+            <li><a href="<%= new_user_registration_path %>"><span class="glyphicon glyphicon-user">&nbsp;</span>Sign Up</a></li>
+            <li><a href="<%= new_user_session_path %>"><span class="glyphicon glyphicon-log-in">&nbsp;</span>Login</a></li>
           </ul>
         <% end %>
       </div><!-- /.navbar-collapse -->
