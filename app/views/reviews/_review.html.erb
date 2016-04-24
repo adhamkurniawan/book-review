@@ -2,6 +2,7 @@
 	<h3>Review</h3>
 	<div class="review-rating" data-score="<%= review.rating %>"></div>
 	<p class="review-comment"><%= review.comment %></p>
+	<p><%= review.user.name %></p>
 
 		<% if user_signed_in? %>
 
